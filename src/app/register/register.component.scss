@@ -1,0 +1,26 @@
+ion-content{
+    --background: url('/assets/loginbg.png');
+    --color:#fff;
+    opacity: 0.9;
+    --background-size:cover;
+    --background-position:center;
+    
+}
+.rou{
+    border-radius: 50%;padding: 10px 10px;
+    background: #3578E5;color: #fff;margin-left: 105px;
+}
+.rou2{
+    border-radius: 50%;padding: 10px 10px;
+    background: rgb(240, 23, 23);color: #fff;margin-left: 20px;
+}
+.rou3{
+    border-radius: 50%;padding: 10px 10px;
+    background: rgb(111, 161, 240);color: #fff;margin-left: 20px;
+}
+
+ion-icon {
+    font-size: 25px;
+  }
+
+  

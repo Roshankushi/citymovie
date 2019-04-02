@@ -1,0 +1,30 @@
+.welcome-card ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  
+  // ion-content{
+  //   --background:rgba(11, 152, 170, 0.897);
+  //   
+    
+  // }
+  //.m-l{
+    //margin-left: 30px;margin-bottom: 20px;
+  //}
+  .h-e img{
+    height: 150px;
+  }
+  .p-l{
+    // padding-left: 30px;
+    text-align: center;padding-bottom: 10px;
+  }
+  
+  
+  ion-button{
+    --background: rgb(224, 89, 10);
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+  

@@ -1,0 +1,38 @@
+
+<ion-content>
+   
+  <ion-grid>
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h3>Create your account!</h3>
+        </div>
+        <div padding>
+          <ion-item>
+            <ion-input   type="text" placeholder="Name" [(ngModel)]="customer.name" name="name"></ion-input>
+          </ion-item><br />
+          <ion-item>
+            <ion-input type="text" placeholder="Password"  [(ngModel)]="customer.password"  name="password"></ion-input>
+          </ion-item><br />
+          <ion-item>
+            <ion-input type="email" placeholder="email" [(ngModel)]="customer.email"  name="email"></ion-input>
+          </ion-item><br />
+          <ion-item>
+            <ion-input type="text" placeholder="Address"  [(ngModel)]="customer.address" name="address" ></ion-input>
+          </ion-item><br />
+          <ion-item>
+              <ion-input  type="text" placeholder="Phone"  [(ngModel)]="customer.phone"name="Phone"></ion-input>
+            </ion-item><br />
+
+        </div>
+        <div padding>
+          <ion-button  size="large" type="submit"  expand="full" (click)="onRigister(customer)">Register</ion-button>
+        </div><br />
+
+      
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

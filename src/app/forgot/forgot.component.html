@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Forgot Password
+      </ion-title>
+    </ion-toolbar>
+  </ion-header> 
+
+
+<ion-content class="cl" color="" padding> 
+  <ion-grid>
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h3>Forgot Password</h3>
+        </div>
+        <div padding>
+          <ion-item>
+              <ion-icon name="contact" padding></ion-icon>
+            <ion-input type="text" placeholder="EmailId" [(ngModel)]="username" ></ion-input>
+          </ion-item><br />
+          <ion-item>
+              <ion-icon name="call" padding></ion-icon>
+            <ion-input type="type" placeholder="Number" [(ngModel)]="password" ></ion-input>
+          </ion-item>
+          </div>
+
+          <div>
+            <ion-button size="large"  expand="full" (click)="onSubmit()">Submit</ion-button>
+          </div>
+ 
+          </ion-col>
+          </ion-row>
+          </ion-grid>
+          </ion-content>

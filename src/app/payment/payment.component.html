@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+     Payment
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+  <ion-grid>
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h3>PayUmoney</h3>
+        </div>
+        <div padding>
+          <ion-item>
+            <ion-input  name="name" type="text" placeholder="Name" required></ion-input>
+          </ion-item><br />
+          <ion-item>
+            <ion-input name="password" type="text" placeholder="Phone"  required></ion-input>
+          </ion-item><br />
+          <ion-item>
+            <ion-input name="password" type="text" placeholder="Debit Card XX-XXX-XX" required></ion-input>
+          </ion-item><br />
+          <ion-item>
+            <ion-input name="DOB" type="password" placeholder="UPI Number"  required></ion-input>
+          </ion-item><br />
+         
+
+        </div>
+        <div padding>
+          <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="full" (click)="onSubmit()">Submit</ion-button>
+        </div><br />
+
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
