@@ -7,7 +7,7 @@ import { Observable} from 'rxjs';
   providedIn: 'root'
 })
 export default class MovieService {
-  private movieUrl = 'http://192.168.0.46:3001/api/movies'
+  private movieUrl = 'http://192.168.0.46:3002/api/movies'
 
   constructor(private http: HttpClient) { }
 

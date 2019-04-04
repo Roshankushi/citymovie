@@ -20,7 +20,7 @@
         </div>
         <div padding>
           <ion-item>
-            <ion-input   type="text" placeholder="Name" [(ngModel)]="booking.customer_id" name="name"></ion-input>
+            <ion-input   type="text" placeholder="ID" [(ngModel)]="booking.customer_id" name="name"></ion-input>
           </ion-item><br />
           <ion-item>
             <ion-input type="text" placeholder="tickets"  [(ngModel)]="booking.tickets"  name="password"></ion-input>
@@ -41,21 +41,27 @@
               <ion-input  type="text" placeholder="theater"  [(ngModel)]="booking.theatre"name="theater"></ion-input>
             </ion-item><br />
             <ion-item>
-              <ion-input  type="text" placeholder="city"  [(ngModel)]="booking.movie_date"name="city"></ion-input>
+                <ion-input  type="text" placeholder="City"  [(ngModel)]="booking.city"name="city"></ion-input>
+              </ion-item><br />
+            <ion-item>
+              <ion-input  type="text" placeholder="yy-mm-dd"  [(ngModel)]="booking.movie_date"name="city"></ion-input>
             </ion-item><br />
-            <!--<ion-item>
-              <ion-input  type="text" placeholder="city"  [(ngModel)]="booking.date"name="date"></ion-input>
+            <!-- <ion-item>
+                <ion-input  type="text" placeholder="yy-mm-dd"  [(ngModel)]="booking.movie_date"name="date"></ion-input>
+              </ion-item><br /> -->
+            <ion-item>
+              <ion-input  type="text" placeholder="yy-mm-dd"  [(ngModel)]="booking.date"name="date"></ion-input>
             </ion-item><br />
             <ion-item>
-              <ion-input  type="text" placeholder="city"  [(ngModel)]="booking.amount"name="amount"></ion-input>
+              <ion-input  type="text" placeholder="amount"  [(ngModel)]="booking.amount"name="amount"></ion-input>
             </ion-item><br />
             <ion-item>
-              <ion-input  type="text" placeholder="city"  [(ngModel)]="booking.ticket_price"name="price"></ion-input>
-            </ion-item><br />-->
+              <ion-input  type="text" placeholder="Ticket-Price"  [(ngModel)]="booking.ticket_price"name="price"></ion-input>
+            </ion-item><br />
           
         </div>
         <div padding>
-          <ion-button  size="large" type="submit"  expand="full" (click)="onRigister(booking)">Register</ion-button>
+          <ion-button  size="large" type="submit"  expand="full" (click)="onRigister(booking)">Book Now</ion-button>
         </div><br />
 
           </ion-col>

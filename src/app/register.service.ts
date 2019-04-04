@@ -6,7 +6,7 @@ import { Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class RegisterService {
-  private customerUrl = 'http://192.168.0.72:3002/api/customers'
+  private customerUrl = 'http://192.168.0.72:3000/api/customers'
   constructor( private http:HttpClient) { }
 
 

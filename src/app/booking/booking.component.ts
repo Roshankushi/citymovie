@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {RegisterService} from '../register.service';
-
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
@@ -14,6 +13,7 @@ export class BookingComponent implements OnInit {
   ngOnInit() {}
 
   onRigister(booking){
+    console.log(JSON.stringify(booking));
   	this.registerService.addRemoteCustomer(this.booking).subscribe(()=>{this.router.navigate(['/payment']);});
   }
 

@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Booking Details
+      </ion-title>
+    </ion-toolbar>
+  </ion-header> 
+
+
+  <ion-content>
+  <ion-grid>
+  
+      <ion-row >
+        <ion-col col-6>
+            <ion-card >
+             <ion-img  class="h-e"  src={{movie.image_url}} (click)="onImage()"></ion-img>
+             <p text-center><b><a button >{{movie.name}}</a></b></p>
+             <ion-list class="p-l"> 
+  <ion-icon name="star"></ion-icon><ion-icon name="star">
+             </ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
+             <ion-icon name="star-outline"></ion-icon></ion-list>
+             <ion-button class="m-l" (click)="onPayment()">Book Now</ion-button>
+            </ion-card>           
+            </ion-col>
+            </ion-row>
+            </ion-grid>
+            </ion-content>

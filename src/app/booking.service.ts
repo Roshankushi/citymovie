@@ -8,11 +8,14 @@ import { Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class BookingService {
-  private bookingUrl = 'http://192.168.0.46:3001/api/booking'
-
+  private bookingUrl = 'http://192.168.0.46:3002/api/booking'
+booking=[];
 
   constructor(private http:HttpClient) { }
 
+  getRemoteCutomers():Observable<[]>{
+    return this.http.get<[]>(this.bookingUrl);
+   }
 
   addRemoteCustomer(booking):Observable<any>{
   	return this.http.post(this.bookingUrl,booking);

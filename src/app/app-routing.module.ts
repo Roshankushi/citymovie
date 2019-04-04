@@ -10,6 +10,7 @@ import { BookingComponent } from './booking/booking.component';
 import { OfferComponent } from './offer/offer.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentdoneComponent } from './paymentdone/paymentdone.component';
+import { DetailsComponent } from './details/details.component';
 const routes: Routes = [
   {
     path: '',
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'offer',
     component: OfferComponent
+  },
+  {
+    path: 'details/:id',
+    component: DetailsComponent
   },
   {
     path: 'payment',

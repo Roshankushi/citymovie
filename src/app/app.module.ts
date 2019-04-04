@@ -20,9 +20,10 @@ import { PaymentComponent } from './payment/payment.component';
 import { BookingComponent } from './booking/booking.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { PaymentdoneComponent } from './paymentdone/paymentdone.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
-  declarations: [AppComponent,LoginComponent,RegisterComponent,ListmovieComponent,OfferComponent,PaymentComponent,BookingComponent,ForgotComponent,PaymentdoneComponent],
+  declarations: [AppComponent,LoginComponent,RegisterComponent,ListmovieComponent,OfferComponent,PaymentComponent,BookingComponent,ForgotComponent,PaymentdoneComponent,DetailsComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
