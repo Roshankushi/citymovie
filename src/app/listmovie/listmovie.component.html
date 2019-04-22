@@ -1,8 +1,8 @@
 
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+    <ion-buttons slot="start" >
+      <ion-menu-button style="color:#af13f7"></ion-menu-button>
     </ion-buttons>
     <ion-title>
       Movies List
@@ -14,31 +14,37 @@
 <ion-content >
 <ion-slides pager="true" [options]="slideOpts" #mySlider (ionSlidesDidLoad)="slideDidLoad(mySlider)" autoplay="1000" loop="true" speed="3000" >
    <ion-slide>
-     <ion-img src="/assets/slide6.png" (click)="onImage()"></ion-img>
+     <ion-img src="/assets/critic.jpg" (click)="onImage()"></ion-img>
    </ion-slide>
    <ion-slide>
-       <ion-img src="/assets/slide6.png"></ion-img>
+       <ion-img src="/assets/dubbed.jpg"></ion-img>
    </ion-slide>
     
    <ion-slide>
-       <ion-img src="/assets/slide5.png"></ion-img>
+       <ion-img src="/assets/cyborg.jpg"></ion-img>
    </ion-slide>
+   <ion-slide>
+      <ion-img src="/assets/Alias.jpg"></ion-img>
+  </ion-slide>
  </ion-slides><br />
 
  <ion-grid>
   
-     <ion-row >
-       <ion-col col-6 *ngFor="let m of movies">
+     <ion-row style="    margin-bottom: 25px;" *ngFor="let m of movies" >
+       <!-- <ion-col col-12 *ngFor="let m of movies"> -->
            <ion-card style="margin:0px;">
-            <ion-img  class="h-e"  src={{m.image_url}} (click)="onImage()"></ion-img>
-            <p text-center><b><a button >Viking's</a></b></p>
+            <ion-img   style="    float: left;
+            width: 50%;" src={{m.image_url}} (click)="onImage()"></ion-img>
+            <p style="    margin-top: 50px;" text-center><b><a button style="color:#af13f7">{{m.name}}</a></b></p>
             <ion-list class="p-l">
               <ion-icon name="star"></ion-icon><ion-icon name="star">
             </ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon></ion-list>
-            <ion-button class="m-l" (click)="onBooking()">Book Now</ion-button>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-button class="m-l" (click)="onBooking(m.id)">Book Now</ion-button>
+          </ion-list>
+           
            </ion-card>           
-           </ion-col>
+           <!-- </ion-col> -->
            </ion-row>
            </ion-grid>
            </ion-content>

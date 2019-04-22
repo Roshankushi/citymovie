@@ -24,8 +24,8 @@ export class ListmovieComponent implements OnInit {
 onImage(){
 this.router.navigate(['/payment']);
 }
-onBooking(){
-  this.router.navigate(['/booking']);
+onBooking(id){
+  this.router.navigate(['/details/'+id]);
 }
 
 }

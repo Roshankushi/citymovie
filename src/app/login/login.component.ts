@@ -35,6 +35,10 @@ customers=[];
     onRegister(){
       this.router.navigate(['/register']);
      }
+
+     onForgot(){
+       this.router.navigate(['/forgot']);
+     }
     
    }
 

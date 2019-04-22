@@ -16,36 +16,36 @@ export class AppComponent {
       url: '/listmovie',
       icon: 'list'
     },
-    {
-      title: 'Login',
-      url: '/login',
-      icon: 'log-in'
-    },
-    {
-      title: 'PaymentGateway',
-      url: '/payment',
-      icon: 'contact'
-    },
+    // {
+    //   title: 'PaymentGateway',
+    //   url: '/payment',
+    //   icon: 'contact'
+    // },
     {
       title: 'Offers',
       url: '/offer',
-      icon: 'log-in'
+      icon: 'person'
     },
-    {
-      title: 'Register',
-      url: '/register',
-      icon: 'contact'
-    },
+    // {
+    //   title: 'Register',
+    //   url: '/register',
+    //   icon: 'contact'
+    // },
     {
       title: 'Booking',
       url: '/booking',
-      icon: 'log-in'
+      icon: 'book'
     },
     {
-      title: 'PaymentDone',
-      url: '/paymentdone',
-      icon: 'log-in'
-    },
+      title: 'Log Out',
+      url: '/login',
+      icon: 'log-out'
+    }
+    // {
+    //   title: 'PaymentDone',
+    //   url: '/paymentdone',
+    //   icon: 'log-in'
+    // },
     
   ];
 

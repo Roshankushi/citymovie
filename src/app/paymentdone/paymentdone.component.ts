@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-paymentdone',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentdoneComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {}
+
+  onListMovie(){
+     this.router.navigate(['/listmovie']);
+     }
+  
 
 }

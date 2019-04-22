@@ -3,13 +3,17 @@
   <ion-grid>
     <ion-row color="primary" justify-content-center>
       <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+              <ion-img style="width: 40%;
+              margin: 0px auto;"src="/assets/logo.png"></ion-img>
+            </div>
         <div text-center>
-          <h3>Login</h3>
+          <h3 style="color:#fff">Login</h3>
         </div>
         <div padding>
           <ion-item>
               <ion-icon name="contact" padding></ion-icon>
-            <ion-input type="text" placeholder="UserID" [(ngModel)]="customer.username" required></ion-input>
+            <ion-input type="text" placeholder="UserName" [(ngModel)]="customer.username" required></ion-input>
           </ion-item><br />
           <ion-item>
               <ion-icon name="lock" padding></ion-icon>
@@ -17,14 +21,18 @@
           </ion-item>
           
           <!-- Checkbox Colors -->
-        <ion-checkbox color="primary" class="m-t" checked="true"></ion-checkbox><span><a class="t-d" href="http://localhost:8101/forgot">Forgot Password</a></span>
+        
+              <!-- <p class="t-d" (click)="onForgot()">Forgot Password</p> -->
+         
+    
 
         </div><br />
         <div>
-          <ion-button size="large"   expand="full" (click)="onLogin()">SignIn</ion-button>
+          <ion-button style="width: 45%;"size="large"   expand="medium" (click)="onLogin()">SignIn</ion-button>
+          <ion-button style="width: 45%;"size="large"  expand="medium" (click)="onRegister()">Rgister</ion-button>
         </div>
         <div>
-            <ion-button size="large"  expand="full" (click)="onRegister()">Rgister</ion-button>
+           
           </div>
         
       </ion-col>

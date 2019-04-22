@@ -1,8 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+    
     <ion-title>
      Payment
     </ion-title>
@@ -15,7 +13,7 @@
     <ion-row color="primary" justify-content-center>
       <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
         <div text-center>
-          <h3>PayUmoney</h3>
+          <h3 style="color:#fff;">PayUmoney</h3>
         </div>
         <div padding>
           <ion-item>
@@ -34,7 +32,9 @@
 
         </div>
         <div padding>
-          <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="full" (click)="onSubmit()">Submit</ion-button>
+          <!-- <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="full" (click)="onSubmit()">Submit</ion-button> -->
+          <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="full" (click)="PaymentDetails()">Submit</ion-button>
+          
         </div><br />
 
         

@@ -6,11 +6,13 @@
           <ion-title>Menu</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content>
+      <ion-content style="--background: #af13f7;
+      color: #fff;">
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" style="--opacity: 1;--background: #af13f7;
+            color: #fff;">
+              <ion-icon slot="start" [name]="p.icon" style="--opacity: 1;"></ion-icon>
               <ion-label>
                 {{p.title}}
               </ion-label>
