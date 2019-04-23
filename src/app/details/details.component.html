@@ -1,9 +1,9 @@
 <ion-header>
     <ion-toolbar>
     <ion-buttons slot="start">
-    <ion-menu-button></ion-menu-button>
+    <ion-menu-button style="color:#dd4f37"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title style="color:#dd4f37">
     Booking Details
     </ion-title>
     </ion-toolbar>
@@ -16,20 +16,25 @@
     <ion-col col-6>
     <!-- <ion-card > -->
     <ion-img class="h-e" src={{movie.image_url}} (click)="onImage()"></ion-img>
-    <p text-center><b><a button >{{movie.name}}</a></b></p>
+    <p text-center ><b><a style="color:#dd4f37" button >{{movie.name}}</a></b></p>
     <ion-list class="p-l"> 
     <ion-icon name="star"></ion-icon><ion-icon name="star">
     </ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
     <ion-icon name="star-outline"></ion-icon></ion-list>
     <ion-item>
-        <ion-label>Date</ion-label>
+        <ion-label style="color:#dd4f37">Date</ion-label>
         <ion-datetime display-format="MMM DD, YYYY"></ion-datetime>
         </ion-item>
         <ion-item>
-        <ion-label>Movie Time</ion-label>
+        <ion-label style="color:#dd4f37">Movie Time</ion-label>
         <ion-datetime display-format=" HH:mm"></ion-datetime>
-        </ion-item><br /><br />
-    <ion-button class="m-l" (click)="onPayment()">Book Now</ion-button>
+        </ion-item>
+        <ion-item>
+            <ion-label style="color:#dd4f37">Tickets</ion-label>
+            <ion-datetime display-format=" MM"></ion-datetime>
+            </ion-item><br /><br />
+    <ion-button style="--background:#dd4f37;
+    --color: #fff;" class="m-l" (click)="onPayment()">Book Now</ion-button>
     <!-- </ion-card> -->
     <br />
     

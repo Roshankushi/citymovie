@@ -1,9 +1,9 @@
 <ion-header>
     <ion-toolbar>
     <ion-buttons slot="start">
-    <ion-menu-button></ion-menu-button>
+    <ion-menu-button style="color:#dd4f37"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title style="color:#dd4f37">
     Book Tickets
     </ion-title>
     </ion-toolbar>
@@ -54,10 +54,11 @@
     </ion-item><br />
         <ion-item>
         <ion-input type="text" placeholder="Ticket Price" [(ngModel)]="booking.ticket_price"name="price"></ion-input>
-        </ion-item><br />
+        </ion-item>
         </div>
         <div padding>
-        <ion-button size="large" type="submit" expand="full" (click)="onRigister(booking)">Book Now</ion-button>
+        <ion-button style="--background:#fff;
+        --color: #dd4f37;" size="large" type="submit" expand="full" (click)="onRigister(booking)">Book Now</ion-button>
         </div><br />
         
         </ion-col>

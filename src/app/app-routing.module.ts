@@ -11,10 +11,11 @@ import { OfferComponent } from './offer/offer.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentdoneComponent } from './paymentdone/paymentdone.component';
 import { DetailsComponent } from './details/details.component';
+import { LandingcomponentComponent } from './landingcomponent/landingcomponent.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'landingcomponent',
     pathMatch: 'full'
   },
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'paymentdone',
     component: PaymentdoneComponent
+  },
+  {
+    path:'landingcomponent',
+    component:LandingcomponentComponent
   }
 
   

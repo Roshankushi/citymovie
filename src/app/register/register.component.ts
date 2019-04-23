@@ -20,4 +20,8 @@ customer:any={};
   onRigister(customer){
   	this.regesterService.addRemoteCustomer(customer).subscribe(()=>{this.router.navigate(['/login']);});
   }
+
+  onBack(){
+  	this.router.navigate(['/login']);
+  }
 }

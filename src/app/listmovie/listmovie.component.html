@@ -2,9 +2,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start" >
-      <ion-menu-button style="color:#af13f7"></ion-menu-button>
+      <ion-menu-button style="color:#dd4f37"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title style="color:#dd4f37">
       Movies List
     </ion-title>
   </ion-toolbar>
@@ -32,10 +32,10 @@
   
      <ion-row style="    margin-bottom: 25px;" *ngFor="let m of movies" >
        <!-- <ion-col col-12 *ngFor="let m of movies"> -->
-           <ion-card style="margin:0px;">
+           <ion-card style="margin:0px auto;">
             <ion-img   style="    float: left;
             width: 50%;" src={{m.image_url}} (click)="onImage()"></ion-img>
-            <p style="    margin-top: 50px;" text-center><b><a button style="color:#af13f7">{{m.name}}</a></b></p>
+            <p style="    margin-top: 50px;" text-center><b><a button style="color:#dd4f37">{{m.name}}</a></b></p>
             <ion-list class="p-l">
               <ion-icon name="star"></ion-icon><ion-icon name="star">
             </ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
